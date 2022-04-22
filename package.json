@@ -1,0 +1,22 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "Web Backend Development for CSE 341",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachRochette/cse341.git"
+  },
+  "author": "Zach Rochette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachRochette/cse341/issues"
+  },
+  "homepage": "https://github.com/ZachRochette/cse341#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
