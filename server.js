@@ -15,7 +15,8 @@ dotenv.config();
 
 const MongoClient = require('mongodb').MongoClient;
 MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
-  if (err) throw err;var dbo = db.db("CSE341MongoDB");
+  if (err) throw err;
+  var dbo = db.db("CSE341MongoDB");
   dbo.collection("contacts").find().toArray(function(err, result) {
     if (err) throw err;
     console.log(result);
