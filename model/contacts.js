@@ -1,27 +1,26 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 
 // create schema and model
-const ContactSchema = new Schema({
+const ContactSchema = mongoose.Schema({
   firstName: {
     type: String,
-    required: [true, 'Name field is required']
+    required: true
   },
   lastName: {
     type: String,
-    required: [true, 'Name field is required']
+    required: true
   },
   email: {
     type: String,
-    required: [true, 'Email field is required']
+    required: true
   },
   favoriteColor: {
     type: String,
-    required: [true, 'Favorite color field is required']
+    required: true
   },
   birthday: {
     type: Date,
-    required: [true, 'Birthday field is required']
+    required: true
   }
 });
 

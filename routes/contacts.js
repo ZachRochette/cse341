@@ -25,12 +25,20 @@ routes.get('/:id', (req, res) => {
 });
 
 // CREATE NEW CONTACT
-routes.post('/', (req, res, next) => {
-  ContactsModel.create(req.body)
-    .then(function (contactModel) {
-      res.send(contactModel);
-    })
-    .catch(next);
+routes.post('/', (req, res) => {
+  const contact = new ContactsModel({
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  });
+  try {
+    const newContact = contact.save();
+    res.json(newContact);
+  } catch (err) {
+    res.json({ message: err });
+  }
 });
 
 // UPDATE CONTACT
