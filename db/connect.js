@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // .env variables MONGODB_URI
 const dotenv = require('dotenv');
 dotenv.config();
