@@ -1,11 +1,14 @@
 ////////////////////////////////////////////////
 //// LOCAL TESTING 
 
+// GET ALL CONTACTS
 GET http://localhost:3000/contacts
 
+// GET ONE CONTACT
 ### 
 GET http://localhost:3000/contacts/626bb837a5171a37ee89d7fe
 
+// CREATE CONTACT
 ###
 POST http://localhost:3000/contacts HTTP/1.1
 content-type:application/json
@@ -17,6 +20,10 @@ content-type:application/json
     "favoriteColor": "red",
     "birthday": "12/2/96"
 }
+
+// DELETE CONTACT
+###
+DELETE http://localhost:3000/contacts/626bb837a5171a37ee89d7fe
 
 /////////////////////////////////////////////////
 //// HEROKU PUBLISHED
