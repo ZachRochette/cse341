@@ -36,8 +36,37 @@ Content-Type: application/json
 
 /////////////////////////////////////////////////
 //// HEROKU PUBLISHED
+
+// GET ALL CONTACTS
 ###
 GET https://cse341-heroku-app.herokuapp.com/contacts
 
+// GET ONE CONTACT
 ### 
-GET https://cse341-heroku-app.herokuapp.com/contacts/626bb837a5171a37ee89d7fe
+GET https://cse341-heroku-app.herokuapp.com/contacts/627601e140c89737470f3f11
+
+// CREATE CONTACT
+###
+POST https://cse341-heroku-app.herokuapp.com/contacts HTTP/1.1
+content-type:application/json
+
+{
+    "firstName":"Zach",
+    "lastName":"Rochette",
+    "email":"zach@example.com",
+    "favoriteColor": "red",
+    "birthday":"06/28/96"
+}
+
+// DELETE CONTACT
+###
+DELETE https://cse341-heroku-app.herokuapp.com/contacts/627601e140c89737470f3f11
+
+// PUT UPDATE CONTACT
+###
+PUT https://cse341-heroku-app.herokuapp.com/contacts/627601e140c89737470f3f11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "favoriteColor":"yellow"
+}
