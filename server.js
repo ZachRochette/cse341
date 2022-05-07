@@ -1,11 +1,23 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-const connect = require('./db/connect');
 const bodyParser = require('body-parser');
-//const mongoose = require('mongoose');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config();
 
-connect.initDatabase();
+mongoose
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbname: 'cseDatabase'
+  })
+  .then(() => {
+    console.log('Connected to mongodb');
+  })
+  .catch((err) => {
+    console.error(err);
+  });
 
 // connect using mongoose
 // mongoose.connect(process.env.MONGODB_URI);
