@@ -14,11 +14,11 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type:application/json
 
 {
-    "firstName":"Zach",
+    "firstName":"Heather",
     "lastName":"Rochette",
-    "email":"zach@example.com",
+    "email":"heather@example.com",
     "favoriteColor": "red",
-    "birthday":"06/28/96"
+    "birthday":"2/2/2"
 }
 
 // DELETE CONTACT
