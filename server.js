@@ -19,10 +19,6 @@ mongoose
     console.error(err);
   });
 
-// connect using mongoose
-// mongoose.connect(process.env.MONGODB_URI);
-// mongoose.Prommise = global.Promise;
-
 app.use(bodyParser.json());
 
 // initialize routes
