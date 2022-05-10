@@ -22,7 +22,10 @@ routes.post('/', (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
-    birthday: req.body.birthday
+    birthday: req.body.birthday,
+    favoriteFood: req.body.favoriteFood,
+    placeOfBirth: req.body.placeOfBirth,
+    shoeSize: req.body.shoeSize
   };
   ContactsModel.create(contact, (err, result) => {
     if (err) console.log(err);

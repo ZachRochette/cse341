@@ -21,6 +21,18 @@ const ContactSchema = mongoose.Schema({
   birthday: {
     type: Date,
     required: true
+  },
+  favoriteFood: {
+    type: String,
+    required: true
+  },
+  placeOfBirth: {
+    type: String,
+    required: true
+  },
+  shoeSize: {
+    type: String,
+    required: true
   }
 });
 

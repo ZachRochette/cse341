@@ -18,7 +18,10 @@ content-type:application/json
     "lastName":"Rochette",
     "email":"heather@example.com",
     "favoriteColor": "red",
-    "birthday":"2/2/2"
+    "birthday":"2/2/2",
+    "favoriteFood":"Oranges",
+    "placeOfBirth": "Billings",
+    "shoeSize": "9"
 }
 
 // DELETE CONTACT
@@ -55,7 +58,10 @@ content-type:application/json
     "lastName":"Rochette",
     "email":"zach@example.com",
     "favoriteColor": "red",
-    "birthday":"06/28/96"
+    "birthday":"06/28/96",
+    "favoriteFood":"Oranges",
+    "placeOfBirth": "Billings",
+    "shoeSize": "9"
 }
 
 // DELETE CONTACT
