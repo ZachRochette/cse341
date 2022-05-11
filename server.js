@@ -24,12 +24,6 @@ app.use(bodyParser.json());
 // initialize routes
 app.use('/', require('./routes'));
 
-// Error handling middleware
-app.use(function (err, req, res) {
-  // console.log(err);
-  res.status(422).send({ error: err.message });
-});
-
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
